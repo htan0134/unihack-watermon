@@ -1,0 +1,15 @@
+{
+  "name": "unihack-watermon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "http-server C:\\Users\\lol\\Documents\\Monash\\unihack-watermon\\src\\home.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}
