@@ -1,0 +1,143 @@
+body {
+    background-image: url("../assets/questions-background.png");
+    background-size: 1366px 768px;
+    background-repeat: no-repeat;
+    overflow: auto;
+
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.questions{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.3);
+    border: none;
+    background-color: orange;
+}
+
+.questions:hover {
+    background-color: rgb(255, 115, 0);
+}
+
+.correct-questions, .correct-questions:hover {
+    background-color: limegreen;
+}
+
+.incorrect-questions, .incorrect-questions:hover {
+    background-color: red;
+}
+
+#q1 {
+    top: 165px;
+    left: 10px;
+}
+
+#q2 {
+    top: 235px;
+    left: 250px;
+}
+
+#q3 {
+    top: 250px;
+    left: 460px;
+}
+
+#q4 {
+    top: 410px;
+    left: 425px;
+}
+
+#q5 {
+    top: 540px;
+    left: 540px;
+}
+
+#q6 {
+    top: 580px;
+    left: 730px;
+}
+
+#q7 {
+    top: 650px;
+    left: 845px;
+}
+
+#q8 {
+    top: 540px;
+    left: 960px;
+}
+
+#q9 {
+    top: 430px;
+    left: 1093px;
+}
+
+#q10 {
+    top: 325px;
+    left: 1260px;
+}
+
+#question-modal {
+    display: none;
+    position: absolute;
+    left: calc(1366px/2 - 400px/2);
+    top: calc(768px/2 - 650px/2 - 24px);
+    width: 400px;
+    height: 600px;
+    background-color: #efefef;
+    border-radius: 40px;
+    padding: 30px;
+    box-shadow: inset 5px 5px 10px rgba(216, 216, 216, 0.5); /* Inset shadow */
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#question-header, #question, .answers {
+    font-weight: bolder;
+}
+
+#question-header {
+    font-size: 1.5rem;
+}
+
+#question-box {
+    display: flex;
+    flex-direction: column;
+}
+
+#question, .answers {
+    font-size: 1.1rem;
+    text-align: center;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+}
+
+#question {
+    margin-bottom: 10px;
+    background-color: rgb(243, 121, 0);
+}
+
+.answers {
+    margin-bottom: 10px;
+    border: none;
+    background-color: steelblue;
+}
+
+.answers:hover {
+    color: #ccc;
+}
+
+#question-monster {
+    height: 250px;
+}
